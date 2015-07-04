@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zy.iparking.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_posi"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_mlsection"
+        android:scaleType="centerInside"
+        android:src="@drawable/main_icon_location" />
+
+    <com.zy.tools.ZoomControlView
+        android:id="@+id/zoomcontrolview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginRight="10dp" />
+
+    <com.zy.tools.ScaleView
+        android:id="@+id/scaleview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="60dp" />
+
+</RelativeLayout>
